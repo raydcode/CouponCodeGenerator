@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--black);
+  background: linear-gradient(55deg, #000850 0%, #000320 100%),
+    radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+    linear-gradient(235deg, #bdff00 0%, #000000 100%),
+    linear-gradient(
+      180deg,
+      #002bdc 0%,
+      #002bdc 45%,
+      #2f4bff 45%,
+      #2f4bff 60%,
+      #00a6e7 60%,
+      #00a6e7 80%,
+      #ffe37f 80%,
+      #ffe37f 100%
+    );
+  background-blend-mode: screen, overlay, hard-light, normal;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--white);
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  max-width: 20rem;
+}
+
+
+p{
+  color: var(--white);
+  text-align: center;
+  margin-top:3rem;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5rem;
+  
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
